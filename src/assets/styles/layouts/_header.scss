@@ -1,0 +1,33 @@
+.site-header {
+  background-color: lightblue;
+  color: gray;
+}
+
+.main-nav {
+
+  &__list {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: gray;
+    font-weight: bold;
+    padding: 10px 15px;
+    display: block;
+
+    &:hover {
+      text-decoration: underline;
+      text-decoration-color: darkblue;
+      text-decoration-thickness: 5px;
+      text-underline-offset: 10px;
+    }
+  }
+
+  &__link--active {
+    background-color: darkblue;
+    color: white;
+  }
+}
