@@ -1,3 +1,5 @@
+@use "../mixins";
+
 .site-header {
   background-color: lightblue;
   color: gray;
@@ -7,6 +9,8 @@
 
   &__list {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     list-style: none;
     gap: 20px;
   }
@@ -29,5 +33,13 @@
   &__link--active {
     background-color: darkblue;
     color: white;
+  }
+}
+
+
+@include mixins.respond-desktop {
+  
+  .main-nav__list {
+    flex-direction: row;
   }
 }
