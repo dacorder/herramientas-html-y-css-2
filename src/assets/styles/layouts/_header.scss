@@ -20,7 +20,7 @@
     text-decoration: none;
     color: variables.$color-main-contrast;
     font-weight: bold;
-    padding: 10px 15px;
+    padding: 8px 15px;
     display: block;
 
     &:hover {
@@ -33,7 +33,12 @@
 
   &__link--active {
     background-color: variables.$color-accent;
+    border-radius: 8px;
     color: variables.$color-accent-contrast;
+
+    &:hover {
+      text-decoration: none;
+    }
   }
 }
 

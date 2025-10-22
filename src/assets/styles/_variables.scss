@@ -9,18 +9,9 @@ $font-family-serif: "Georgia", "Times New Roman", serif;
 $color-main: #007acc;
 $color-secondary: #000000;
 $color-accent: #054c7b;
+$color-background: color.scale($color-main, $lightness: 85%);
 
 $color-main-contrast: #ffffff;
 $color-secondary-contrast: #ffffff;
 $color-accent-contrast: #ffffff;
-
-
-
-
-
-
-$uoc-corporate: #000078;
-$uoc-masterbrand: #73edff;
-$uoc-bg: color.scale($uoc-masterbrand, $lightness: 70%);
-
-$mqMinWidth: 420px;
+$color-background-contrast: #000078;
