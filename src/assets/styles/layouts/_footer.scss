@@ -1,0 +1,21 @@
+.site-footer {
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 20px;
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  &__link {
+    color: white;
+    text-decoration: underline dotted;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
