@@ -1,8 +1,9 @@
 @use "../mixins";
+@use "../variables";
 
 .site-header {
-  background-color: lightblue;
-  color: gray;
+  background-color: variables.$color-main;
+  color: variables.$color-main-contrast;
 }
 
 .main-nav {
@@ -17,22 +18,22 @@
 
   &__link {
     text-decoration: none;
-    color: gray;
+    color: variables.$color-main-contrast;
     font-weight: bold;
     padding: 10px 15px;
     display: block;
 
     &:hover {
       text-decoration: underline;
-      text-decoration-color: darkblue;
+      text-decoration-color: variables.$color-accent;
       text-decoration-thickness: 5px;
       text-underline-offset: 10px;
     }
   }
 
   &__link--active {
-    background-color: darkblue;
-    color: white;
+    background-color: variables.$color-accent;
+    color: variables.$color-accent-contrast;
   }
 }
 

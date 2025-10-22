@@ -1,9 +1,10 @@
 @use "../mixins";
+@use "../variables";
 
 .site-footer {
   text-align: center;
-  background-color: black;
-  color: white;
+  background-color: variables.$color-secondary;
+  color: variables.$color-secondary-contrast;
   padding: 20px;
 
   &__list {
@@ -15,7 +16,7 @@
   }
   
   &__link {
-    color: white;
+    color: variables.$color-secondary-contrast;
     text-decoration: underline dotted;
 
     &:hover {
