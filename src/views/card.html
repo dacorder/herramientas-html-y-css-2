@@ -1,7 +1,10 @@
 <div class="card">
     <a class="card__link" href="#">
-        <img class="card__image" src="{{ image }}" alt="Grossmünster">
-        <h3 class="card__title">{{ title }}</h3>
+        <img class="card__image" src="{{ image }}" alt="Foto de {{ title }}">
+        <h3 class="card__title">
+            <i class="fas {{ icon }}"></i>
+            {{ title }}
+        </h3>
         <p class="card__description">{{ description }}</p>
     </a>
 </div>

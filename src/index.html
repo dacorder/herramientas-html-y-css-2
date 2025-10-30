@@ -10,11 +10,13 @@
   <body>
     <include src="./views/header.html"></include>
 
-    <div class="container">
-      <h1>Inicio</h1>
-      <p class="intro">
+    <main class="content">
+      <h1 class="content__title">Inicio</h1>
+      <p class="content__text">
         La ciudad de Zurich, o Stadt Zürich en su idioma oficial, es la ciudad con mayor población de Suiza.
         Es posiblemente por este motivo, por el que muchas veces se dice por error que es la capital del país, aunque como sabemos, este título es en realidad para la ciudad de Berna.
+      </p>
+      <p class="content__text">
         En esta web, me gustaría mostrarte algunos de los puntos de interés más importantes de la ciudad, así como algunas actividades y eventos que se pueden realizar en esta ciudad en la que actualmente resido.
       </p>
 
@@ -25,42 +27,48 @@
             <include src="./views/card.html" locals='{
               "title": "Grossmünster",
               "image": "assets/images/grossmuenster.jpg",
-              "description": "El Grossmünster es la icónica catedral protestante de Zúrich con torres gemelas que domina el paisaje urbano desde el siglo XII."
+              "description": "El Grossmünster es la icónica catedral protestante de Zúrich con torres gemelas que domina el paisaje urbano desde el siglo XII.",
+              "icon": "fa-location-dot"
             }'></include>
           </li>
           <li class="carousel__item">
             <include src="./views/card.html" locals='{
               "title": "Zürichsee",
               "image": "assets/images/zuerichsee.jpg",
-              "description": "El lago de Zúrich es un hermoso lago alpino que ofrece impresionantes vistas, actividades acuáticas y paseos escénicos a lo largo de sus orillas."
+              "description": "El lago de Zúrich es un hermoso lago alpino que ofrece impresionantes vistas, actividades acuáticas y paseos escénicos a lo largo de sus orillas.",
+              "icon": "fa-location-dot"
             }'></include>
           </li>
           <li class="carousel__item">
             <include src="./views/card.html" locals='{
               "title": "Uetliberg",
               "image": "assets/images/uetliberg.jpg",
-              "description": "El Uetliberg es una montaña cercana a Zúrich que ofrece vistas panorámicas de la ciudad, el lago y los Alpes, ideal para senderismo y ciclismo."
+              "description": "El Uetliberg es una montaña cercana a Zúrich que ofrece vistas panorámicas de la ciudad, el lago y los Alpes, ideal para senderismo y ciclismo.",
+              "icon": "fa-location-dot"
             }'></include>
           </li>
           <li class="carousel__item">
             <include src="./views/card.html" locals='{
               "title": "Landesmuseum",
               "image": "assets/images/landesmuseum.jpg",
-              "description": "El Museo Nacional Suizo (Landesmuseum) en Zúrich alberga una rica colección de artefactos históricos y culturales que narran la historia de Suiza desde la prehistoria hasta la actualidad."
+              "description": "El Museo Nacional Suizo (Landesmuseum) en Zúrich alberga una rica colección de artefactos históricos y culturales que narran la historia de Suiza desde la prehistoria hasta la actualidad.",
+              "icon": "fa-location-dot"
             }'></include>
           </li>
           <li class="carousel__item">
             <include src="./views/card.html" locals='{
               "title": "Niederdorf",
               "image": "assets/images/niederdorf.jpg",
-              "description": "Niederdorf es el encantador casco antiguo de Zúrich, conocido por sus calles adoquinadas, tiendas boutique, cafés acogedores y vibrante vida nocturna."
+              "description": "Niederdorf es el encantador casco antiguo de Zúrich, conocido por sus calles adoquinadas, tiendas boutique, cafés acogedores y vibrante vida nocturna.",
+              "icon": "fa-location-dot"
             }'></include>
           </li>
           <li class="carousel__item">
             <include src="./views/card.html" locals='{
               "title": "Opernhaus",
               "image": "assets/images/opernhaus.jpg",
-              "description": "El Opernhaus Zürich es el prestigioso teatro de ópera de Zúrich, reconocido por sus producciones de alta calidad y su arquitectura impresionante."
+              "description": "El Opernhaus Zürich es el prestigioso teatro de ópera de Zúrich, reconocido por sus producciones de alta calidad y su arquitectura impresionante.",
+              "icon": "fa-location-dot"
             }'></include>
           </li>
         </ul>
@@ -73,47 +81,53 @@
             <include src="./views/card.html" locals='{
               "title": "Sechseläuten",
               "image": "assets/images/sechselaeuten.jpg",
-              "description": "Sechseläuten es una fiesta tradicional que marca el fin del invierno y la llegada de la primavera. Uno de los eventos más destacados es la quema del Böögg"
+              "description": "Sechseläuten es una fiesta tradicional que marca el fin del invierno y la llegada de la primavera. Uno de los eventos más destacados es la quema del Böögg",
+              "icon": "fa-calendar"
             }'></include>
           </li>
           <li class="carousel__item">
             <include src="./views/card.html" locals='{
               "title": "Street Parade",
               "image": "assets/images/streetparade.jpg",
-              "description": "Street Parade es uno de los festivales de música electrónica más grandes del mundo. Cada año, miles de personas se reúnen para esta celebración"
+              "description": "Street Parade es uno de los festivales de música electrónica más grandes del mundo. Cada año, miles de personas se reúnen para esta celebración",
+              "icon": "fa-calendar"
             }'></include>
           </li>
           <li class="carousel__item">
             <include src="./views/card.html" locals='{
               "title": "Weihnachtsmärkte",
               "image": "assets/images/weihnachtsmaerkte.jpg",
-              "description": "Los mercados de Navidad en Zurich son una visita obligada. Estos mercados ofrecen una variedad de productos artesanales, comida tradicional y un ambiente festivo"
+              "description": "Los mercados de Navidad en Zurich son una visita obligada. Estos mercados ofrecen una variedad de productos artesanales, comida tradicional y un ambiente festivo",
+              "icon": "fa-calendar"
             }'></include>
           </li>
           <li class="carousel__item">
             <include src="./views/card.html" locals='{
               "title": "Züri Fäscht",
               "image": "assets/images/zuerifescht.jpg",
-              "description": "Züri Fäscht es el festival más grande de Suiza, que se celebra cada tres años. Durante tres días, la ciudad se llena de música, espectáculos, puestos de comida y fuegos artificiales"
+              "description": "Züri Fäscht es el festival más grande de Suiza, que se celebra cada tres años. Durante tres días, la ciudad se llena de música, espectáculos, puestos de comida y fuegos artificiales",
+              "icon": "fa-calendar"
             }'></include>
           </li>
           <li class="carousel__item">
             <include src="./views/card.html" locals='{
               "title": "Knabenschiessen",
               "image": "assets/images/knabenschiessen.jpg",
-              "description": "Knabenschiessen es una tradición anual en Zurich donde los jóvenes participan en una competencia de tiro al blanco."
+              "description": "Knabenschiessen es una tradición anual en Zurich donde los jóvenes participan en una competencia de tiro al blanco.",
+              "icon": "fa-calendar"
             }'></include>
           </li>
           <li class="carousel__item">
             <include src="./views/card.html" locals='{
               "title": "Fondue-Tram",
               "image": "assets/images/fonduetram.jpg",
-              "description": "El Fondue-Tram es una experiencia única en Zurich donde puedes disfrutar de una deliciosa fondue suiza mientras recorres la ciudad en un tranvía histórico."
+              "description": "El Fondue-Tram es una experiencia única en Zurich donde puedes disfrutar de una deliciosa fondue suiza mientras recorres la ciudad en un tranvía histórico.",
+              "icon": "fa-calendar"
             }'></include>
           </li>
         </ul>
       </div>
-    </div>
+    </main>
 
     <include src="./views/footer.html"></include>
     <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->

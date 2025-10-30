@@ -24,7 +24,6 @@
         object-fit: cover;
         border-radius: 4px;
         margin-bottom: 6px;
-        flex-shrink: 0;
     }
     
     &__title{
@@ -41,9 +40,6 @@
         font-size: 0.85rem;
         line-height: 1.2;
         color: variables.$color-background-contrast;
-        overflow: hidden;
-        line-clamp: 3;
-        flex-grow: 1;
     }
 
     &:hover {
